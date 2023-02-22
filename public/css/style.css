@@ -1,0 +1,78 @@
+.landing > h1{
+    font-size: 96px;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 700;
+}
+
+.landing > h2{
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+.landing{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+
+}
+
+nav{
+    width: 100%;
+}
+
+.navbar > div > a{
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.navbar > div > a > strong{
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+a, .landing__links > button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.landing__links > button{
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 0;
+    animation-duration: 0.2s;
+    width: 15vw;
+}
+
+.landing__links > button:hover{
+    border-color: black;
+}
+
+.landing__links > button > img{
+    height: 28px;
+}
+
+.content{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
