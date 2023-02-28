@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.content__about > h1{
+    font-size: 40px;
+}
+
 h1{
     font-family: 'Averia Serif Libre', serif;
     font-weight: 700;
@@ -16,17 +20,20 @@ h1{
 }
 
 .landing{
+    position: relative;
     padding: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    z-index: 2;
 }
 
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -38,24 +45,24 @@ nav{
     width: 100%;
 }
 
-.navbar > div > a{
+.navbar > div > a, .contact__logo > a{
     font-family: 'Averia Serif Libre', serif;
     font-weight: 300;
     font-size: 24px;
+    color: #000;
+    text-decoration: none;
 }
 
-.navbar > div > a > strong{
-    font-family: 'Averia Serif Libre', serif;
-    font-weight: 700;
-    font-size: 40px;
+.contact__logo > a:hover{
+    color: #777;
 }
 
-a, .landing__links > button{
+a{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
-.landing__links > button{
+.landing__links > a{
     font-size: 20px;
     border: 2px solid #ccc;
     border-radius: 0;
@@ -63,16 +70,97 @@ a, .landing__links > button{
     width: 15vw;
 }
 
-.landing__links > button:hover{
+.landing__links > a:hover{
     border-color: black;
 }
 
-.landing__links > button > img{
+.landing__links > a > img{
     height: 28px;
 }
 
 .content{
+    position: relative;
     background-color: black;
     color: white;
     width: 100%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.content__about > p{
+    width: 50vw;
+}
+
+.wave{
+    position: relative;
+    height: 50vh;
+    z-index: 1;
+}
+
+.wave__human{
+    width: 50vw;
+    position: absolute;
+    right: -10vw;
+    bottom: -20vh;
+}
+
+.wave__img{
+    position: absolute;
+    bottom: 0;
+}
+
+.content__about > a{
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #777;
+    border-radius: 0;
+    animation-duration: 0.2s;
+    width: 18vw;
+}
+
+.content__about > a:hover{
+    border-color: #fff;
+}
+
+.content__about > a > img{
+    height: 28px;
+}
+
+p{
+    color: #777;
+}
+
+.content__project__card__title{
+    font-size: 19px;
+}
+
+.content__project__card__description{
+    font-size: 17px;
+}
+
+.content__project > .content__project__card{
+    padding: 4em;
+}
+
+.content__project__card > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact__link{
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+}
+
+.contact__link > a{
+    font-family: 'Averia Serif Libre', serif;
+    color: #000;
+    text-decoration: underline solid #ccc;
+    text-underline-offset: 8px;
+}
+
+.contact__link > a:hover{
+    text-decoration-color: #000;
 }
